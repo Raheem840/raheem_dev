@@ -38,7 +38,7 @@ export default function Hero() {
   Computer Science student fascinated by how systems actually work —
   from the math under an algorithm to the packets moving across a
   network. I build full-stack systems and AI automations for mostly fun , and spend my
-  downtime poking at networks and security concepts just to understand them better.
+  downtime poking at networks and security  and generally any tech concepts just to understand them better.
         </p>
 
         <div className="flex gap-3">

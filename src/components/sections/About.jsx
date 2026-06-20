@@ -14,8 +14,8 @@ export default function About() {
       timerRef.current = setTimeout(() => {
         setShowAnime(false);
         startCycle();
-      }, 6000);
-    }, 4000);
+      }, 5000);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function About() {
 
         <div className="font-mono text-xs bg-[#161616] border border-white/10 rounded p-4 mb-6 leading-relaxed">
           <span className="text-[#b04fff]">class</span> <span className="text-[#4fffb0]">Raheem</span> {'{'}<br />
-          &nbsp;&nbsp;<span className="text-gray-500">// CS · networks · security · math</span><br />
+          &nbsp;&nbsp;<span className="text-gray-500">// CS · networks · security · math . programming</span><br />
           &nbsp;&nbsp;<span className="text-[#b04fff]">constructor</span>() {'{'}<br />
           &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-300">this</span>.curious = <span className="text-[#e0ff4f]">true</span><br />
           &nbsp;&nbsp;{'}'}<br />
@@ -79,7 +79,7 @@ export default function About() {
         </div>
 
         <div className="flex flex-wrap gap-2 mb-8">
-          {['React', 'TypeScript', 'Three.js', 'Networking', 'Security'].map((tag) => (
+          {['Python', 'Javascript', 'React', 'Networking', 'Cyber Security','IT Support'].map((tag) => (
             <span key={tag} className="font-mono text-[10px] tracking-wide border border-[#e0ff4f]/60 text-[#e0ff4f] px-2.5 py-1 rounded">
               {tag}
             </span>
