@@ -8,7 +8,7 @@ export const projects = [
     longDesc: `Shule is a full-stack school management platform built for the reality of Ugandan secondary schools — unreliable internet and all. It runs entirely on the school's local network with no cloud dependency, handling student registration, fee ledgers, CBC-standard report cards, attendance tracking with under-80% alerts, and SMS reminders. Nine distinct user roles from Principal down to Parent, each with scoped access. Built to replace the spreadsheets and paper registers most schools still rely on.`,
     tags: ['React', 'Node.js', 'PostgreSQL', 'LAN', 'Full-Stack'],
     image: '/images/projects/shule.png',
-    github: 'https://github.com/yourusername/shule',
+    github: 'https://github.com/Raheem840/shule',
     live: null,
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     longDesc: `ILES — Internship Lifecycle and Evaluation System — manages the full arc of a university internship: student registration, company placements, weekly log submissions, supervisor evaluations, and academic review workflows. Built after watching the process run entirely on emails and printed forms. The admin dashboard tracks placements in progress, pending evaluations, and log submissions per week. Roles span students, workplace supervisors, academic supervisors, and admins — each seeing only what's relevant to them.`,
     tags: ['React', 'Node.js', 'PostgreSQL', 'Full-Stack'],
     image: '/images/projects/iles.png',
-    github: 'https://github.com/yourusername/iles',
+    github: 'https://github.com/Raheem840/ILES_Frontend',
     live: null,
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     longDesc: `Signal Extractor is an n8n automation workflow that runs on a schedule, pulling RSS feeds simultaneously from three sources: cybersecurity news, anime, and tech memes. The three streams merge, pass through a filter that strips noise, get aggregated, then piped into an AI model that processes the combined signal. Built to scratch a personal itch — staying across three very different corners of the internet without doomscrolling. The pipeline is modular: swap any feed node, adjust the filter logic, point it at a different model.`,
     tags: ['n8n', 'Automation', 'RSS', 'AI', 'Pipelines'],
     image: '/images/projects/signal-extractor.png',
-    github: 'https://github.com/yourusername/signal-extractor',
+    github: 'null',
     live: null,
   },
   {
