@@ -31,12 +31,12 @@ export default function ProjectDetail({ project, onClose, onNext, onPrev, curren
       <div className="flex-1 flex flex-col md:flex-row gap-12 px-8 md:px-16 py-12">
         
         {/* Image */}
-        <div className="w-full md:w-1/2 relative min-h-[280px] rounded overflow-hidden bg-[#161616] border border-white/10 flex items-center justify-center">
+        <div className="w-full md:w-1/2 relative min-h-[400px] rounded overflow-hidden bg-[#0a0a0a] border border-white/10 flex items-center justify-center">
           {project.image ? (
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               onError={(e) => { e.target.style.display = 'none'; }}
             />
           ) : null}
