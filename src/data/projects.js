@@ -32,7 +32,7 @@ export const projects = [
     longDesc: `Signal Extractor is an n8n automation workflow that runs on a schedule, pulling RSS feeds simultaneously from three sources: cybersecurity news, anime, and tech memes. The three streams merge, pass through a filter that strips noise, get aggregated, then piped into an AI model that processes the combined signal. Built to scratch a personal itch — staying across three very different corners of the internet without doomscrolling. The pipeline is modular: swap any feed node, adjust the filter logic, point it at a different model.`,
     tags: ['n8n', 'Automation', 'RSS', 'AI', 'Pipelines'],
     image: '/images/projects/signal-extractor.png',
-    github: 'null',
+    github: null,
     live: null,
   },
   {
