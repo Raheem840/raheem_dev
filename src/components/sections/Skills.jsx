@@ -25,11 +25,9 @@ const skillGroups = [
 const learning = ['Three.js / R3F', 'GSAP', 'TypeScript', 'Docker'];
 
 export default function Skills() {
-  import SkillGraph from '../ui/SkillGraph';
+  // ...skillGroups and learning arrays stay exactly as they are...
 
-// ...skillGroups and learning arrays stay exactly as they are...
-
-return (
+  return (
   <section id="skills" className="min-h-screen bg-black text-white px-8 md:px-16 py-24">
 
     <p className="font-mono text-xs tracking-[0.25em] uppercase text-[#e0ff4f] mb-3">
@@ -113,4 +111,5 @@ return (
     </div>
 
   </section>
-);
+  );
+}
