@@ -26,9 +26,17 @@ export default function SkillGraph() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
+    c// Replace the resize function:
     const resize = () => {
       canvas.width  = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
+
+      // Re-clamp all existing nodes back inside new bounds after resize
+      // This fixes nodes getting stranded outside after orientation change
+      nodes.forEach((node) => {
+        node.x = Math.min(Math.max(node.x, PAD), canvas.width  - PAD);
+        node.y = Math.min(Math.max(node.y, PAD), canvas.height - PAD);
+      });
     };
     resize();
     window.addEventListener('resize', resize);

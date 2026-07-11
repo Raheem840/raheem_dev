@@ -94,7 +94,7 @@ export default function Skills() {
       </div>
 
       {/* Right — Obsidian-style skill graph */}
-      <div className="lg:w-1/2 min-h-[400px] lg:min-h-full overflow-hidden relative">
+      <div className="lg:w-1/2 min-h-[360px] lg:min-h-full overflow-hidden relative">
         <p className="absolute top-4 left-4 font-mono text-[9px] text-gray-700 tracking-widest z-10">
           SKILL GRAPH
         </p>
