@@ -14,7 +14,7 @@ export default function Projects() {
     <section id="projects" className="min-h-screen bg-black text-white px-8 md:px-16 py-24">
       
       <p className="font-mono text-xs tracking-[0.25em] uppercase text-[#e0ff4f] mb-3">
-        02 — Selected Work
+        03 — Selected Work
       </p>
       <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">Projects</h2>
 

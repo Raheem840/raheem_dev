@@ -31,7 +31,7 @@ export default function Skills() {
   <section id="skills" className="min-h-screen bg-black text-white px-8 md:px-16 py-24">
 
     <p className="font-mono text-xs tracking-[0.25em] uppercase text-[#e0ff4f] mb-3">
-      03 — Stack
+      02 — Stack
     </p>
     <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Skills</h2>
     <p className="text-gray-500 font-mono text-xs mb-14 max-w-md leading-relaxed">

@@ -42,7 +42,7 @@ export default function Contact() {
 
       {/* Section label */}
       <p className="font-mono text-xs tracking-[0.25em] uppercase text-[#e0ff4f] mb-3">
-        05 — Contact
+        04 — Contact
       </p>
 
       {/* Heading — yasio style: large, tight, one accent word */}
@@ -55,10 +55,10 @@ export default function Contact() {
       </p>
 
       {/* Two column layout */}
-      <div className="flex flex-col lg:flex-row gap-16 max-w-5xl">
+      <div className="flex flex-col lg:flex-row gap-16 max-w-full">
 
         {/* Left — form */}
-        <div className="lg:w-1/2 flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
 
           {/* Name */}
           <div className="flex flex-col gap-1.5">
@@ -119,7 +119,7 @@ export default function Contact() {
         </div>
 
         {/* Right — socials + availability */}
-        <div className="lg:w-1/2 flex flex-col justify-between gap-12">
+        <div className="flex-1 flex flex-col justify-between gap-12">
 
           {/* Social links */}
           <div className="flex flex-col gap-3">
