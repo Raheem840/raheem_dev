@@ -26,24 +26,13 @@ export default function SkillGraph() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
-    c// Replace the resize function:
-    const resize = () => {
-      canvas.width  = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+    // Set canvas internal resolution to match CSS size
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
 
-      // Re-clamp all existing nodes back inside new bounds after resize
-      // This fixes nodes getting stranded outside after orientation change
-      nodes.forEach((node) => {
-        node.x = Math.min(Math.max(node.x, PAD), canvas.width  - PAD);
-        node.y = Math.min(Math.max(node.y, PAD), canvas.height - PAD);
-      });
-    };
-    resize();
-    window.addEventListener('resize', resize);
+    const PAD = 60;
 
-    // Build flat node list from groups
-    // PAD keeps nodes away from edges so labels don't clip
-    const PAD = 70;
+    // Build nodes AFTER canvas is sized so positions are within real bounds
     const nodes = [];
     SKILL_GROUPS.forEach((group) => {
       group.skills.forEach((skill) => {
@@ -51,13 +40,24 @@ export default function SkillGraph() {
           label:   skill,
           groupId: group.id,
           color:   group.color,
-          x:  PAD + Math.random() * (canvas.width  - PAD * 2),
-          y:  PAD + Math.random() * (canvas.height - PAD * 2),
+          x:  PAD + Math.random() * Math.max(canvas.width  - PAD * 2, 1),
+          y:  PAD + Math.random() * Math.max(canvas.height - PAD * 2, 1),
           vx: (Math.random() - 0.5) * SPEED,
           vy: (Math.random() - 0.5) * SPEED,
         });
       });
     });
+
+    const resize = () => {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      // Re-clamp nodes inside new bounds on resize
+      nodes.forEach((node) => {
+        node.x = Math.min(Math.max(node.x, PAD), canvas.width  - PAD);
+        node.y = Math.min(Math.max(node.y, PAD), canvas.height - PAD);
+      });
+    };
+    window.addEventListener('resize', resize);
 
     // Helper — are two nodes in the same group?
     const related = (a, b) => a.groupId === b.groupId;
